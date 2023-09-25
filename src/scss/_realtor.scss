@@ -1,0 +1,49 @@
+.realtor{
+     display: grid;
+     align-content: center;
+     text-align: center;
+     justify-content: center;
+     row-gap: 2rem;
+     h2{
+          margin-bottom: 2rem;
+     }
+
+     &__profile{
+          @media (max-width: $phone-sm){
+               display: grid;
+               grid-template-columns: repeat(3, min-content);
+               column-gap: 3.2rem;
+               align-content: center;
+     
+          }
+     }
+
+     &__img{
+          width: 5rem;
+          height: 5rem;
+          display: block;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: center;
+     }
+
+     &__detail{
+          display: grid;
+          grid-template-columns: repeat(2, max-content);
+          grid-template-rows: repeat(3, min-content);
+          column-gap: 1.4rem;
+          row-gap: 2rem;
+
+          @media (max-width: $breakpoint-500){
+               grid-template-columns: max-content;
+          justify-items: center;}
+          
+
+     }
+     &__text{
+          display: grid;
+          align-content: center;
+          line-height: 1.2;
+          justify-items: start;
+     }
+}

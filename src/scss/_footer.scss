@@ -1,0 +1,32 @@
+.footer {
+    padding: 6rem;
+
+    &__nav__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        list-style: none;
+        text-transform: uppercase;
+        font-size: $font-xsm;
+        text-align: center;
+        gap: 1.6rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: $grey-light-1;
+        text-decoration: none;
+        display: block;
+        padding: 1rem 2rem;
+        transition: all 0.2s ease-in;
+    }
+    &__link:hover,
+    &__link:active {
+        background-color: rgba(#fff, 0.05);
+        transform: translateY(-3px);
+    }
+}
+.legal__term {
+    text-align: center;
+    margin-top: 4rem;
+    color: $grey-dark-1;
+}
